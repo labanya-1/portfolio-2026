@@ -1,33 +1,38 @@
-# portfolio-website-design
+# Labanya Roy Portfolio
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Personal portfolio website for Labanya Roy, built with Next.js and Tailwind CSS.
 
-## Built with v0
+## Features
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
-
-[Continue working on v0 →](https://v0.app/chat/projects/prj_DXm0Kg4kyEbQnfhsSTx0KXzpmyUm)
+- Responsive portfolio sections for experience, projects, skills, education, and contact
+- GitHub and LinkedIn profile links
+- Certificate image gallery
+- Static export support for GitHub Pages
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+```
+
+Run the development server:
+
+```bash
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-## Learn More
+```bash
+pnpm build
+```
 
-To learn more, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+The site is configured for GitHub Pages at:
+
+https://labanya-1.github.io/portfolio-2026/
