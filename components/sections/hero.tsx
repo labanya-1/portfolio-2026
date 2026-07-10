@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight, Download, MapPin } from 'lucide-react'
 import { AnimatedBlobs } from '@/components/animated-blobs'
+import { publicPath } from '@/lib/public-path'
 import { profile } from '@/lib/resume-data'
 
 const easing = [0.22, 1, 0.36, 1] as const
@@ -99,7 +100,7 @@ export function Hero() {
             />
             <div className="relative h-80 w-64 overflow-hidden rounded-[2rem] border-4 border-card bg-card shadow-xl sm:h-96 sm:w-72">
               <Image
-                src="/images/labanya.png"
+                src={publicPath('/images/labanya.png')}
                 alt={`Portrait of ${profile.name}`}
                 fill
                 sizes="(max-width: 640px) 16rem, 18rem"

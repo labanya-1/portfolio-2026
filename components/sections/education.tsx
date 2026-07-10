@@ -1,6 +1,8 @@
+import Image from 'next/image'
 import { GraduationCap, Trophy } from 'lucide-react'
 import { Reveal, Stagger } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
+import { publicPath } from '@/lib/public-path'
 import { achievements, certifications, education } from '@/lib/resume-data'
 
 export function Education() {
@@ -79,9 +81,11 @@ export function Education() {
               className="group overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             >
               <div className="aspect-[4/3] overflow-hidden bg-secondary">
-                <img
-                  src={cert.image}
+                <Image
+                  src={publicPath(cert.image)}
                   alt={`${cert.title} certificate`}
+                  width={800}
+                  height={600}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
